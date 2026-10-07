@@ -3,7 +3,7 @@ from flask import Flask
 from threading import Thread
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from google import genai
+import google.generativeai as genai
 
 # Gemini Client Setup
 gemini_client = genai.Client(api_key=os.environ.get("AQ.Ab8RN6KQYH9Ro967rLCuTCxUCEcPzrvYnWvIzImb-AJf32hhBQ"))
